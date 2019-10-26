@@ -1,0 +1,10 @@
+.not-found {
+    text-align: center;
+    margin: 30% 0;
+    @include tablet {
+        margin: 20% 0;
+    }
+    @include desktop {
+        margin: 10% 0;
+    }
+}

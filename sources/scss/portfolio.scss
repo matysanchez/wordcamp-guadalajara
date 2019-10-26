@@ -1,0 +1,62 @@
+.portfolio {
+  h1 {
+    margin-bottom: 0;
+  }
+  header {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .cover {
+    margin-bottom: $section-end-margin;
+    a {
+      margin-top: 160px;
+      zoom: 0.7;
+      display: inline-block;
+      border-radius: 100%;
+      background: $white;
+      height: 150px;
+      width: 150px;
+      border: 5px solid $white;
+      @include desktop {
+        zoom: 1;
+        margin-top: 275px;
+      }
+      @include tablet {
+        zoom: 0.85;
+        margin-top: 230px;
+      }
+    }
+    .logo {
+      border-radius: 100%;
+      height: 140px;
+      width: 140px;
+      margin: 5px auto;
+      display: inline-block;
+    }
+  }
+  .entry-meta {
+    p {
+      font-family: $font-complementary;
+      color: $dark-grey;
+      font-size: 1em;
+      text-align: center;
+      i:nth-child(2) {
+        margin-left: 1.5em;
+      }
+    }
+  }
+  .container {
+    max-width: $one-column-width;
+    margin-bottom: $section-end-margin;
+  }
+}
+
+.portfoliologo a {
+  border-radius: 100%;
+  img {
+    max-height: 150px;
+    max-width: 150px;
+  }
+}

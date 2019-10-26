@@ -1,0 +1,32 @@
+#footer {
+    background-color: $light-grey;
+    padding: 1em 0;
+    .third {
+        width: 100%;
+    }
+    @include tablet {
+        .col {
+            margin-right: 5%;
+        }
+        .third {
+            width: 28%;
+        }
+    }
+    @include desktop {
+        .col {
+            margin-right: 5%;
+        }
+        .third {
+            width: 28%;
+        }
+    }
+    .textwidget.custom-html-widget a {
+        text-decoration: none;
+    }
+}
+
+#copyright {
+    margin: 1em 0;
+    font-size: .8em;
+    font-family: $font-complementary;
+}

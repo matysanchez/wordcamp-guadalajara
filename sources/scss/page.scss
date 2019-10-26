@@ -1,0 +1,13 @@
+main.page {
+  text-align: center;
+  .container {
+    max-width: $one-column-width;
+    margin-bottom: $section-end-margin;
+  }
+  header {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+    }
+  }
+}

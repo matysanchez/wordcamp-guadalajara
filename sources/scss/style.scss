@@ -1,0 +1,31 @@
+/*!
+Theme Name: matysanchez.com
+Theme URI: https://github.com/matysanchez/matysanchez-wptheme
+Author: TidyThemes
+Author URI: https://matysanchez.com/
+Description: Please read: tidythemes.com/concept. matysanchez is the definitive WordPress HTML5 boilerplate starter theme. We've carefully constructed the most clean and minimalist theme possible for designers and developers to use as a base to build websites for clients or to build completely custom themes from scratch. Clean, simple, unstyled, semi-minified, unformatted, and valid code, SEO-friendly, jQuery-enabled, no programmer comments, standardized and as white label as possible, and most importantly, the CSS is reset for cross-browser-compatability and no intrusive visual CSS styles have been added whatsoever. A perfect skeleton theme. For support and suggestions, go to: https://github.com/tidythemes/matysanchez/issues. Thank you.
+Version: 2019.1
+License: GNU General Public License
+License URI: https://www.gnu.org/licenses/gpl.html
+Text Domain: matysanchez
+*/
+
+@import "_normalize";
+@import "_variables";
+@import "_helpers";
+@import "_mixins";
+@import "navigation";
+@import "home";
+@import "blog";
+@import "page";
+@import "single";
+@import "portfolio";
+@import "404";
+@import "footer";
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: $font-primary;
+}

@@ -1,0 +1,26 @@
+.single {
+  h1 {
+    margin-bottom: 0;
+  }
+  header {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+    }
+  }
+  .entry-meta {
+    p {
+      font-family: $font-complementary;
+      color: $dark-grey;
+      font-size: 1em;
+      text-align: center;
+      .webicon:not(:first-child) {
+        margin-left: 1.5em;
+      }
+    }
+  }
+  .container {
+    max-width: $one-column-width;
+    margin-bottom: $section-end-margin;
+  }
+}

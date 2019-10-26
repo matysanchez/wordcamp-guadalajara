@@ -1,0 +1,32 @@
+main.blog, main.archive, main.category, main.searchpage {
+    text-align: center;
+    h1 {
+      margin-bottom: 0;
+      text-align: center;
+    }
+    header {
+      text-align: center;
+      h1 {
+        font-size: 2em;
+      }
+    }
+    article {
+        margin-bottom: $section-end-margin;
+    }
+    .entry-meta {
+      p {
+        font-family: $font-complementary;
+        color: $dark-grey;
+        font-size: 1em;
+        text-align: center;
+        .webicon:not(:first-child) {
+          margin-left: 1em;
+        }
+      }
+    }
+    .container {
+      max-width: $one-column-width;
+      margin-bottom: $section-end-margin;
+    }
+  }
+  

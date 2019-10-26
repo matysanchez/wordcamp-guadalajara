@@ -1,0 +1,74 @@
+@function strip-unit($number) {
+  @if type-of($number) == 'number' and not unitless($number) {
+    @return $number / ($number * 0 + 1);
+  }
+
+  @return $number;
+}
+
+@mixin grid($target, $context){
+	width: (($target/$context)*100%);
+}
+
+@mixin mleft($target, $context){
+	margin-left: (($target/$context)*100%);
+}
+
+@mixin mright($target, $context){
+	margin-right: (($target/$context)*100%);
+}
+
+.clearfix {
+    zoom:1;
+    &:before, &:after {
+        content: "\0020";
+        display: block;
+        height: 0;
+        overflow: hidden;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+.row {
+  @extend .clearfix;
+}
+
+.col {
+  float: none;
+  @include tablet {
+    float: left;
+  }
+  @include desktop {
+    float: left;
+  }
+}
+
+.half {
+  width: 100%;
+  @include tablet {
+    @include grid((strip-unit($container-width)/2), strip-unit($container-width));
+    @include mright(36, strip-unit($container-width));
+  }
+  @include desktop {
+    @include grid((strip-unit($container-width)/2)-36, strip-unit($container-width));
+    @include mright(36, strip-unit($container-width));
+  }
+}
+
+.third {
+  @include grid((strip-unit($container-width)/3),  strip-unit($container-width));
+}
+
+.fourth {
+  @include grid((strip-unit($container-width)/4), strip-unit($container-width));
+}
+
+.fifth {
+  @include grid((strip-unit($container-width)/5), strip-unit($container-width));
+}
+
+.sixth {
+  @include grid((strip-unit($container-width)/6), strip-unit($container-width));
+}
